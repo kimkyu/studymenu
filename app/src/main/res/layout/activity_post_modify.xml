@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post_Modify">
+
+    <TextView
+        android:id="@+id/Write_Board_Name_Id"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:background="#9e187d67"
+        android:gravity="center"
+        android:text="게시글 수정"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Board_Kind_Id"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#8ee5aa"
+        android:gravity="center"
+        android:text="게시판"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Write_Board_Name_Id" />
+
+    <TextView
+        android:id="@+id/Kind_of_Board_Content_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="종류"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/Board_Kind_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Write_Board_Name_Id" />
+
+
+    <TextView
+        android:id="@+id/Title_Id"
+        android:layout_width="57dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#8ee5aa"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Board_Kind_Id" />
+
+    <EditText
+        android:id="@+id/Title_Write_Modify_Id"
+        android:layout_width="251dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
+        android:hint=""
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/Title_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Kind_of_Board_Content_Id" />
+
+
+    <TextView
+        android:id="@+id/Contents_Id"
+        android:layout_width="74dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="Content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Id" />
+
+    <EditText
+        android:id="@+id/Contents_Write_Modify_Id"
+        android:layout_width="343dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contents_Id" />
+
+    <TextView
+        android:id="@+id/People_Max_Id"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="인원"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contents_Write_Modify_Id" />
+
+    <EditText
+        android:id="@+id/People_Max_Write_Modify_Id"
+        android:layout_width="64dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:hint=" ex) 2"
+        android:inputType="number"
+        android:singleLine="false"
+        app:layout_constraintStart_toEndOf="@+id/People_Max_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Contents_Write_Modify_Id" />
+
+    <TextView
+        android:id="@+id/Region_Id"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="Locally"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/People_Max_Write_Modify_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Contents_Write_Modify_Id" />
+
+    <EditText
+        android:id="@+id/Region_Write_Modify_Id"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:hint=" ex)창원"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Region_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Contents_Write_Modify_Id" />
+
+    <TextView
+        android:id="@+id/Tag_Id"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="Tag"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/People_Max_Id" />
+
+    <EditText
+        android:id="@+id/Tag_Write_Modify_Id"
+        android:layout_width="266dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:hint=" ex)정보통신기사"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Tag_Id"
+        app:layout_constraintTop_toBottomOf="@+id/Region_Id" />
+
+    <Button
+        android:id="@+id/Modify_Complete_Button_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="글쓰기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tag_Id" />
+
+</android.support.constraint.ConstraintLayout>

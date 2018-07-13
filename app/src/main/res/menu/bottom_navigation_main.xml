@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_selectpurpose"
+        android:icon = "@drawable/baseline_dashboard_black_24dp"
+        android:title = "Board"
+    />
+    <item
+        android:id="@+id/action_friend"
+        android:icon ="@drawable/ic_people_black_24dp"
+        android:title = "Friend"
+        />
+    <item
+    android:id="@+id/action_blacklist"
+    android:icon = "@drawable/baseline_block_black_24dp"
+    android:title = "Block"
+    />
+    <item
+        android:id="@+id/action_chatrooms"
+        android:icon = "@drawable/ic_chat_black_24dp"
+        android:title = "Chat"
+        />
+    <item
+        android:id="@+id/action_account"
+        android:icon = "@drawable/ic_account_circle_black_24dp"
+        android:title = "Account"
+        />
+
+
+</menu>

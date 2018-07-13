@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lg_user.project">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    if(Build.Version.SDK_INT >= Build.VERSION_CODES.M){ requestPermissions(new
+    String[](android.Manifest.permission.READ_EXTERNAL_STORAGE},0) }
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.MessageActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".fragment.SelectFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.GroupMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SelectPurposeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chattingboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".WriteActivity">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        </activity>
+        <activity
+            android:name=".PostContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Post_Modify"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragment.BlacklistFragement"></activity>
+    </application>
+
+</manifest>
